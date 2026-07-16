@@ -32,13 +32,13 @@ npx skills add keithhegit/imagegen-fix
 安装后，可以明确告诉 Agent 使用这个技能：
 
 ```text
-使用 $imagegen-result-recovery 生成并恢复这张图片：一只橙色虎斑猫坐在窗边。
+使用 $imagegen-fix 生成并恢复这张图片：一只橙色虎斑猫坐在窗边。
 ```
 
 也可以在图片已经生成但没有显示时使用：
 
 ```text
-上一张图片没有显示，请使用 $imagegen-result-recovery 恢复它，不要重新生成。
+上一张图片没有显示，请使用 $imagegen-fix 恢复它，不要重新生成。
 ```
 
 ## 什么时候会触发

@@ -1,9 +1,9 @@
 ---
-name: imagegen-result-recovery
+name: imagegen-fix
 description: Generate images through the imagegen skill when explicitly requested, then recover, save, and display the built-in image_generation_call Base64 result; also recover and display existing image-generation results when the chat UI did not render them. Use when users ask this skill to generate and show an image, ask where a generated image is, report a missing generated image, request the raw imagegen result, or when an image_generation_call contains a non-empty result even if its status is still generating.
 ---
 
-# Imagegen Result Recovery
+# Imagegen Fix
 
 Generate only when the user explicitly asks this skill to make a new image. Otherwise recover the existing image result instead of generating a duplicate. Treat a non-empty Base64 `result` that decodes to a valid image as success; do not treat `status: generating` alone as failure.
 
