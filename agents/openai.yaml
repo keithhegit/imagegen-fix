@@ -1,0 +1,4 @@
+interface:
+  display_name: "Imagegen Result Recovery"
+  short_description: "Generate images and recover hidden results"
+  default_prompt: "Use $imagegen-result-recovery to generate an image, recover the Base64 result, and display it."
