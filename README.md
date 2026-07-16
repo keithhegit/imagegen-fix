@@ -1,4 +1,4 @@
-# 生图结果恢复 · Imagegen Result Recovery
+# 新版Codex生图结果恢复 · Imagegen-Fix
 
 让 Codex 在图片已经生成、但聊天界面没有正常显示时，把隐藏的生图结果恢复出来，保存到工作区，并直接展示给用户。
 
