@@ -1,18 +1,11 @@
 # 新版Codex生图结果恢复 · Imagegen-Fix
 
-让 Codex 在图片已经生成、但聊天界面没有正常显示时，把隐藏的生图结果恢复出来，保存到工作区，并直接展示给用户。
+让新版本 Codex即 ChatGPT-Work 客户端 在图片已经生成、但聊天界面没有正常显示时，把隐藏的生图结果恢复出来，保存到工作区，并直接展示给用户。
 
 ![Agent Skill](https://img.shields.io/badge/Agent%20Skill-imagegen--result--recovery-blueviolet)
 [![GitHub 仓库](https://img.shields.io/badge/GitHub-keithhegit%2Fimagegen--fix-181717?logo=github)](https://github.com/keithhegit/imagegen-fix)
 [![安装方式](https://img.shields.io/badge/安装-npx%20skills%20add-2ea44f)](https://skills.sh/)
 
-事情是这样的。
-
-有时普通生图工具已经返回了图片，但聊天界面只显示空白、仍显示“生成中”，或者没有给出可以继续使用的文件路径。此时再次生成只会浪费一次生图机会，也可能得到另一张图片。
-
-这个技能专门处理这层断点：它读取 Codex 会话里已经返回的 `image_generation_call`，提取其中的 Base64 图片结果，校验文件格式，保存到当前工作区的 `outputs/` 目录，再用绝对路径展示出来。
-
-它不是新的生图模型，而是普通 `imagegen` 技能之后的一层结果恢复流程。
 
 ```text
 普通 imagegen 生图
